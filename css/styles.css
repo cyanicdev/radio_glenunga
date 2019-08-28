@@ -1,0 +1,51 @@
+body { 
+    background-color: #373131;
+}
+
+@font-face {
+    font-family: "gilroy-bold";
+    src: url("D:/radio-web-player/res/fonts/Gilroy-ExtraBold.otf");
+}
+
+h2 {
+    font-size: 40px;
+    font-family: "gilroy-bold";
+}
+
+footer {
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    padding: 30px 70px 30px 70px;
+    background-color: black;
+}
+
+.stream {
+    text-align: center;
+    /* background-color: blue; */
+    border-radius: 5%;
+}
+.overlay {
+    margin: 0 auto;
+    width: 230px;
+    height: 230px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    border-radius: 5%;
+    background-color: black;
+    opacity: 0;
+}
+
+.overlay:hover {
+    opacity: 0.7;
+}
+
+.far {
+    color: #ddd;
+    top: 35%;
+    position: relative;
+    font-size: 70px;
+}
