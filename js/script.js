@@ -10,10 +10,30 @@ $(document).ready(function(){
 
             $('i').attr('class', 'far fa-play-circle');
             $(this).children('i').toggleClass('fa-play-circle fa-pause-circle');
+
+            $('audio').each(function(){
+                this.pause(); // Stop playing
+            }); 
+
+            // bad code fix this
+            document.getElementsByClassName(now_playing)[0].children[1].children[0].play();
         } else {
             // pause song
             $(this).children('i').toggleClass('fa-play-circle fa-pause-circle');
 
+            document.getElementsByClassName(now_playing)[0].children[1].children[0].pause();
+            now_playing = null;
         }
     });
+});
+
+
+$.ajax({ 
+    type: 'GET', 
+    url: 'http://10.147.20.119:8000/status-json.xsl', 
+    data: { get_param: 'icestats' }, 
+    dataType: 'json',
+    success: function (data) { 
+        console.log(data);
+    }
 });

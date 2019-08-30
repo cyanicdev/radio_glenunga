@@ -24,6 +24,7 @@ footer {
     text-align: center;
     /* background-color: blue; */
     border-radius: 5%;
+    padding-bottom: 3px;
 }
 .overlay {
     margin: 0 auto;
@@ -48,4 +49,18 @@ footer {
     top: 35%;
     position: relative;
     font-size: 70px;
+}
+
+a {
+    font-size: 11px;
+}
+
+.item p {
+    margin: 0 auto;
+    width: 220px;
+    left: 0;
+    right: 0;
+    padding-top: 14px;
+    margin-bottom: 0;
+    font-size: 14px;
 }
