@@ -32,10 +32,6 @@
   margin-bottom: 0;
 }
 
-.features-boxed .features {
-  padding: 50px 0;
-}
-
 .features-boxed .item {
   text-align: center;
 }
@@ -72,8 +68,4 @@
   height: 230px;
   border-radius: 5%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.item {
-  margin-bottom: 50px;
 }

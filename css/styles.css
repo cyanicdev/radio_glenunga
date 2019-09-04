@@ -1,5 +1,6 @@
 body { 
     background-color: #373131;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -7,9 +8,17 @@ body {
     src: url("D:/radio-web-player/res/fonts/Gilroy-ExtraBold.otf");
 }
 
+h2, h3, h4, h5 {
+    font-family: "gilroy-bold";
+}
+
 h2 {
     font-size: 40px;
-    font-family: "gilroy-bold";
+}
+
+h3 {
+    text-align: center;
+    padding: 15px 0;
 }
 
 footer {
@@ -60,7 +69,31 @@ a {
     width: 220px;
     left: 0;
     right: 0;
-    padding-top: 14px;
-    margin-bottom: 0;
     font-size: 14px;
+    margin-bottom: 0;
+}
+
+.item { padding-bottom: 30px; }
+
+.stream-title {
+    padding-top: 10px;
+}
+
+.special-events {
+    background-color: #3e3737;
+}
+
+.countdown-timer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    bottom: 0;
+}
+
+.countdown-timer pre {
+    text-transform: uppercase;
+    z-index: 100;
+    color: #ddd;
+    font-size: 25px;
 }
