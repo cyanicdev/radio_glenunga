@@ -8,7 +8,12 @@ $(document).ready(function(){
             // play song
             now_playing = $(this).parent('.stream').attr('class');
 
-            $('i').attr('class', 'far fa-play-circle');
+            $('i').each(function(){
+                if ($(this).attr('class') == 'far fa-pause-circle') {
+                    $(this).attr('class', 'far fa-play-circle');
+                }
+            }); 
+
             $(this).children('i').toggleClass('fa-play-circle fa-pause-circle');
 
             $('audio').each(function(){
