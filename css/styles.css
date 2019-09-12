@@ -1,0 +1,111 @@
+body { 
+    background-color: #121212;
+    color: white;
+}
+
+.col {
+    background-color: blue;
+    width: 300px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+header {
+    height: 65px; 
+    width: 100%;
+    padding: 15px;
+    overflow: hidden;
+    position: absolute; 
+    top: 0;
+    background-color: #1f1f1f;
+    width: 100%;
+}
+main {
+    overflow: auto;
+    white-space: nowrap;
+    position: absolute;
+    width: 100%;
+    top: 65px;
+    height: calc(100% - 65px - 70px);
+}
+
+@font-face {
+    font-family: "gilroy-bold";
+    src: url("D:/radio-web-player/res/fonts/Gilroy-ExtraBold.otf");
+}
+
+h2, h3, h4, h5 {
+    font-family: "gilroy-bold";
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.stream {
+    text-align: center;
+    /* background-color: blue; */
+    border-radius: 5%;
+    padding-bottom: 3px;
+}
+.overlay {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+}
+.stream img {
+    width: 200px;
+    height: 200px;
+}
+
+
+.overlay:hover {
+    opacity: 0.7;
+}
+
+.far {
+    color: #ddd;
+    top: 35%;
+    position: relative;
+    font-size: 70px;
+}
+
+a {
+    font-size: 11px;
+}
+
+.stream-title {
+    padding-top: 10px;
+}
+
+.special-events {
+    background-color: #3e3737;
+}
+
+.countdown-timer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    bottom: 0;
+}
+
+.countdown-timer pre {
+    text-transform: uppercase;
+    z-index: 100;
+    color: #ddd;
+    font-size: 25px;
+}
