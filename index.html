@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/Features-Boxed.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/radioplayer.css">
     <script src="https://kit.fontawesome.com/e15575d67d.js"></script>
 </head>
 
@@ -73,13 +74,56 @@
             </div>
         </div>
     </div>
+    <div id="radioplayercontainer">
+        <div id="radioplayer"></div>
+    </div>
+   
+
+    <footer>
+        <p>© 2019 Radio Glenunga</p>
+    </footer>
+
     <script src="js/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/countdown.js"></script>
-    <footer>
-        <p>© 2019 Radio Glenunga</p>
-    </footer>
+    <script src="js/nativeflashradiov4.js"></script>
+    <script>
+            $("#radioplayer").flashradio({
+                token: "",
+                userinterface: "small",
+                backgroundcolor: "#000000",
+                themecolor: "#292526", 
+                themefontcolor: "#d4c9c9", 
+                startvolume: "100", 
+                radioname: "", 
+                scroll: "auto", 
+                autoplay: "false", 
+                useanalyzer: "fake", 
+                analyzertype: "4", 
+                usecover: "true", 
+                usestreamcorsproxy: "false", 
+                affiliatetoken: "1000lIPN", 
+                debug: "false", 
+                ownsongtitleurl: "", 
+                radiocover: "", 
+                songgooglefontname: "", 
+                songfontname: "", 
+                titlegooglefontname: "", 
+                titlefontname: "", 
+                corsproxy: "php", 
+                streamprefix: "", 
+                mountpoint: "", 
+                radiouid: "", 
+                apikey: "",
+                radiojar: "",  
+                streamid: "1", 
+                streampath: "/live", 
+                streamtype: "shoutcast2", 
+                streamurl: "http://149.56.155.209:80", 
+                songinformationinterval: "5000", 
+            });
+        </script>	
 </body>
 
 </html>
