@@ -42,3 +42,8 @@ $.ajax({
         console.log(data);
     }
 });
+
+$('.popup').bind('click', function() {
+    $('.popup').css('visibility', 'hidden');
+    $('.popup-content').css('visibility', 'hidden');
+});

@@ -10,15 +10,25 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/radioplayer.css">
     <script src="https://kit.fontawesome.com/e15575d67d.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/loadbefore.js"></script>
 </head>
 
 <body>
     <header>
         <h2 class="text-center">Radio Glenunga</h2>
+        <div class="nav-left">
+            <a onclick="(function(){$('.popup, .popup-feedback').css('visibility', 'visible');})()">Feedback</a>
+            <a onclick="(function(){window.open('https:\/\/trello.com/b/DuTX0Ob7/radio-glenunga','_blank');})()">Roadmap</a>
+        </div>
+        <div class="nav-right">
+            <a onclick="(function(){$('.popup, .popup-join').css('visibility', 'visible');})()">Join RG</a>
+            <a onclick="(function(){$('.popup, .popup-about').css('visibility', 'visible');})()">About</a>
+        </div>
     </header>
 
     <main>
-    <div class="col">
+    <div class="col" style="margin-left: 50px;">
             <div class="pop-stream stream">   
                 <img src="res/img/pop_cover.png">
                 <div class="overlay">
@@ -27,7 +37,7 @@
                 </div> 
             </div>  
             <p class="stream-title">description here</p> 
-            <a href="#">listen on youtube</i></a> 
+            <a href="#" class="youtube-link">listen on youtube</i></a> 
     </div>
     <div class="col">
             <div class="lofi-stream stream">   
@@ -38,7 +48,8 @@
                 </div> 
             </div>  
             <p class="stream-title">description here</p> 
-            <a href="#">listen on youtube</i></a>   
+            <p class="curated">curated by javad hamidi</p> 
+            <a href="#" class="youtube-link">listen on youtube</i></a>   
     </div>
     <div class="col">
             <div class="house-stream stream">   
@@ -47,8 +58,9 @@
                     <audio src="http://10.147.20.119:8000/house.ogg"></audio>
                     <i class="far fa-play-circle"></i>
                 </div>
-            </div> 
+            </div>
             <p class="stream-title">description here</p> 
+            <p class="curated">curated by archer gardiner-sheridan</p> 
     </div>
     <div class="col">
             <h3>Special Events</h3>
@@ -75,8 +87,9 @@
         <div id="radioplayer"></div>
     </footer>
 
+    <div class="popup-overlay popup"></div><i class="fas fa-times popup-cross popup"></i></div>
+    <iframe class="popup-feedback popup-content" src="https://docs.google.com/forms/d/e/1FAIpQLSeWBD_EAUswC9YCMuirgFB7q4Rvb_AZOWwv1KK9esqkw5nD9w/viewform?embedded=true">Loading…</iframe>
 
-    <script src="js/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/countdown.js"></script>

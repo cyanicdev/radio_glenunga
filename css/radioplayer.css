@@ -17,8 +17,12 @@
 
 }
 
+.curated {
+    font-size: 11px;
+}
+
 footer {
-    padding: 5px;
+    padding: 15px 30px;
     overflow: hidden;
     position: absolute;
     bottom: 0;
