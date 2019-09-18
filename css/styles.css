@@ -116,16 +116,24 @@ h3 {
     font-size: 70px;
 }
 
-.youtube-link {
-    font-size: 11px;
+.hidden {
+    opacity: 0;
 }
 
 .stream-header {
-    padding-top: 10px;
+    font-family: "gilroy-bold";
+    display: block;
+    width: 200px;
+    white-space: normal;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .stream-description {
-    font-size: 11px;
+    display: block;
+    width: 200px;
+    white-space: normal;
+    font-size: 12px;
 }
 
 .special-events {
