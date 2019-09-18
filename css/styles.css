@@ -75,7 +75,7 @@ h3 {
     margin: 0 auto;
     width: 200px;
     height: 200px;
-    top: 0;
+    top: 50px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -186,6 +186,7 @@ main::-webkit-scrollbar-button {display:none}
     top: 3%;
     left: 2%;
     visibility: hidden;
+    cursor: pointer;
 }
 
 header a {

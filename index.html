@@ -19,7 +19,7 @@
         <h2 class="text-center">Radio Glenunga</h2>
         <div class="nav-left">
             <a onclick="(function(){$('.popup, .popup-feedback').css('visibility', 'visible');})()">Feedback</a>
-            <a onclick="(function(){window.open('https:\/\/trello.com/b/DuTX0Ob7/radio-glenunga','_blank');})()">Roadmap</a>
+            <a onclick="(function(){window.open('https:\/\/trello.com/b/DuTX0Ob7/radio-glenunga','_blank');})()"">Roadmap</a>
         </div>
         <div class="nav-right">
             <a onclick="(function(){$('.popup, .popup-join').css('visibility', 'visible');})()">Join RG</a>
@@ -37,7 +37,6 @@
                 </div> 
             </div>  
             <p class="stream-title">description here</p> 
-            <a href="#" class="youtube-link">listen on youtube</i></a> 
     </div>
     <div class="col">
             <div class="lofi-stream stream">   
@@ -48,8 +47,7 @@
                 </div> 
             </div>  
             <p class="stream-title">description here</p> 
-            <p class="curated">curated by javad hamidi</p> 
-            <a href="#" class="youtube-link">listen on youtube</i></a>   
+            <p class="curated">curated by javad hamidi</p>   
     </div>
     <div class="col">
             <div class="house-stream stream">   
@@ -63,7 +61,17 @@
             <p class="curated">curated by archer gardiner-sheridan</p> 
     </div>
     <div class="col">
-            <h3>Special Events</h3>
+        <div class="pop-rock-stream stream">   
+            <img src="res/img/pop_rock_cover.png">
+            <div class="overlay">
+                <audio src="http://10.147.20.119:8000/pop-rock.ogg"></audio>
+                <i class="far fa-play-circle"></i>
+            </div>
+        </div>
+        <p class="stream-title">description here</p> 
+        <p class="curated">curated by leo bodycomb</p> 
+    </div>
+    <div class="col">
             <div class="halloween-stream stream">   
                     <img src="res/img/halloween_cover.png">
                 <div class="overlay">
@@ -75,11 +83,8 @@
                     <pre class="timer">00:00:00:00</pre>
                 </div>
             </div> 
-            <h4>Coming Soon ...</h4>
+            <h4>Special Events</h4>
             <p class="stream-title">description here</p> 
-    </div>
-    <div class="col">
-        ..
     </div>
     </main>
 
@@ -89,6 +94,8 @@
 
     <div class="popup-overlay popup"></div><i class="fas fa-times popup-cross popup"></i></div>
     <iframe class="popup-feedback popup-content" src="https://docs.google.com/forms/d/e/1FAIpQLSeWBD_EAUswC9YCMuirgFB7q4Rvb_AZOWwv1KK9esqkw5nD9w/viewform?embedded=true">Loading…</iframe>
+    <iframe class="popup-join popup-content" src="https://docs.google.com/forms/d/e/1FAIpQLSdxkg7aqL_yFIMrLZghpz3KgAroZFdHRZNnhRcGhAOrLnN8rw/viewform?embedded=true">Loading…</iframe>
+    <iframe class="popup-about popup-content" src="https://docs.google.com/document/d/e/2PACX-1vQb8_XjnC2R7-rMb8Se-93lgozf4zzLOlRyNORdkAocmnGP0u7ZdgeGO7Ad7MF88QZbFooiad5FqjQU/pub?embedded=true"></iframe>
 
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
