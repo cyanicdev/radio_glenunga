@@ -1,6 +1,21 @@
 body { 
-    background-color: #373131;
     color: white;
+    background-color: #141414;
+    font-family: "gilroy-light";
+}
+
+a {
+    margin: 20px;
+    border-radius: 5px;
+    font-family: "gilroy-bold";
+}
+
+a:hover {
+    margin: 10px;
+    padding: 10px;
+    background-color: #252525;
+    box-shadow: 0px 0px 5px #101010;
+    transition-duration: 100ms;
 }
 
 .col {
@@ -21,22 +36,16 @@ header {
     overflow: hidden;
     background-color: #1f1f1f;
 }
+
 .nav-left {
     top: 25px;
     position: absolute;
-    font-family: "gilroy-bold";
 }
-.nav-left a {
-    margin-left: 20px;
-}
+
 .nav-right {
     top: 25px;
     right: 15px;
     position: absolute;
-}
-.nav-right a {
-    margin-right: 20px;
-    font-family: "gilroy-bold";
 }
 
 main {
@@ -53,7 +62,12 @@ main {
     src: url("https://cyanicdev.github.io/radio_glenunga/res/fonts/Gilroy-ExtraBold.otf");
 }
 
-h2, h3, h4, h5 {
+@font-face {
+    font-family: "gilroy-light";
+    src: url("https://cyanicdev.github.io/radio_glenunga/res/fonts/Gilroy-Light.otf");
+}
+
+h1, h2, h3, h4, h5 {
     font-family: "gilroy-bold";
 }
 
@@ -83,10 +97,11 @@ h3 {
     background-color: black;
     opacity: 0;
 }
+
 .stream img {
     width: 200px;
     height: 200px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0px 0px 10px #070707;
 }
 
 
@@ -105,8 +120,12 @@ h3 {
     font-size: 11px;
 }
 
-.stream-title {
+.stream-header {
     padding-top: 10px;
+}
+
+.stream-description {
+    font-size: 11px;
 }
 
 .special-events {
@@ -118,7 +137,6 @@ h3 {
     left: 0;
     right: 0;
     top: 30%;
-    bottom: 0;
 }
 
 .countdown-timer pre {

@@ -9,6 +9,7 @@
     <!--<link rel="stylesheet" href="css/Features-Boxed.css">-->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/radioplayer.css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
     <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/loadbefore.js"></script>
@@ -16,7 +17,9 @@
 
 <body>
     <header>
-        <h2 class="text-center">Radio Glenunga</h2>
+        <div class="text-center">
+            <img src="res/img/logo-transparent.png" width="80px" height="45px">
+        </div>
         <div class="nav-left">
             <a onclick="(function(){$('.popup, .popup-feedback').css('visibility', 'visible');})()">Feedback</a>
             <a onclick="(function(){window.open('https:\/\/trello.com/b/DuTX0Ob7/radio-glenunga','_blank');})()"">Roadmap</a>
@@ -36,7 +39,7 @@
                     <i class="far fa-play-circle"></i>
                 </div> 
             </div>  
-            <p class="stream-title">description here</p> 
+            <p class="stream-header">description here</p> 
     </div>
     <div class="col">
             <div class="lofi-stream stream">   
@@ -46,8 +49,8 @@
                     <i class="far fa-play-circle"></i>
                 </div> 
             </div>  
-            <p class="stream-title">description here</p> 
-            <p class="curated">curated by javad hamidi</p>   
+            <p class="stream-header">description here</p> 
+            <p class="stream-description">curated by javad hamidi</p>   
     </div>
     <div class="col">
             <div class="house-stream stream">   
@@ -57,8 +60,8 @@
                     <i class="far fa-play-circle"></i>
                 </div>
             </div>
-            <p class="stream-title">description here</p> 
-            <p class="curated">curated by archer gardiner-sheridan</p> 
+            <p class="stream-header">description here</p> 
+            <p class="stream-description">curated by archer gardiner-sheridan</p> 
     </div>
     <div class="col">
         <div class="pop-rock-stream stream">   
@@ -68,23 +71,19 @@
                 <i class="far fa-play-circle"></i>
             </div>
         </div>
-        <p class="stream-title">description here</p> 
-        <p class="curated">curated by leo bodycomb</p> 
+        <p class="stream-header">description here</p> 
+        <p class="stream-description">curated by leo bodycomb</p> 
     </div>
     <div class="col">
-            <div class="halloween-stream stream">   
-                    <img src="res/img/halloween_cover.png">
-                <div class="overlay">
-                    <audio src="http://10.147.20.119:8000/house.ogg"></audio>
-                    <i class="far fa-play-circle"></i>
-                </div>
-                <div class="countdown-timer">
-                    <i class="fas fa-lock" style="font-size: 22px; margin-bottom: 10px;"></i>
-                    <pre class="timer">00:00:00:00</pre>
-                </div>
-            </div> 
-            <h4>Special Events</h4>
-            <p class="stream-title">description here</p> 
+        <div class="halloween-stream stream">   
+            <img src="res/img/halloween_cover.png">
+            <div class="countdown-timer">
+                <i class="fas fa-lock" style="font-size: 22px; margin-bottom: 10px;"></i>
+                <pre class="timer">00:00:00:00</pre>
+            </div>
+        </div> 
+        <p class="stream-header">Special Event</p>
+        <p class="stream-description">description here</p> 
     </div>
     </main>
 
