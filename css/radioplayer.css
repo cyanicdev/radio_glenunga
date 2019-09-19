@@ -14,14 +14,4 @@
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
     border: 0px none rgb(255, 255, 255);
-
-}
-
-footer {
-    padding: 15px 30px;
-    overflow: hidden;
-    position: absolute;
-    bottom: 0;
-    background-color: #1f1f1f;
-    width: 100%;
 }

@@ -34,6 +34,17 @@ header {
     padding: 15px;
     overflow: hidden;
     background-color: #1f1f1f;
+    box-shadow: 0px -2px 10px #070707;
+}
+
+footer {
+    padding: 15px 30px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    background-color: #1f1f1f;
+    box-shadow: 0px 2px 10px #070707;
+    width: 100%;
 }
 
 .nav-left {
@@ -135,10 +146,6 @@ h3 {
     font-size: 14px;
 }
 
-.special-events {
-    background-color: #3e3737;
-}
-
 .countdown-timer {
     position: absolute;
     left: 0;
@@ -160,21 +167,16 @@ Not supports in Firefox and IE */
 
 /* total width */
 main::-webkit-scrollbar {
-    background-color:#141414;
     height: 16px;
     width: 16px;
 }
 
-/* background of the scrollbar except button or resizer */
-main::-webkit-scrollbar-track {
-    background-color:#141414;
-}
-
 /* scrollbar itself */
 main::-webkit-scrollbar-thumb {
-    background-color:#ccc;
+    background-color:#555;
     border-radius:16px;
-    border:4px solid #141414;
+    background-clip: padding-box;
+    border:4px solid transparent;
 }
 
 /* remove white box */
@@ -184,7 +186,6 @@ main::-webkit-scrollbar-corner {
 
 /* set button(top and bottom of the scrollbar) */
 main::-webkit-scrollbar-button {display:none}
-
 
 .popup-content {
     z-index: 1000;
