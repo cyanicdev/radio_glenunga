@@ -35,7 +35,7 @@ $(document).ready(function(){
 
 $.ajax({ 
     type: 'GET', 
-    url: 'http://10.147.20.119:8000/status-json.xsl', 
+    url: 'http://10.60.101.11:8000/status-json.xsl', 
     data: { get_param: 'icestats' }, 
     dataType: 'json',
     success: function (data) { 
