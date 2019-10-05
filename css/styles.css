@@ -162,8 +162,11 @@ h3 {
 
 
 
-/* Customize website's scrollbar like Mac OS
-Not supports in Firefox and IE */
+/* Customize website's scrollbar like Mac OS */
+
+main {
+    scrollbar-color: #555 #141414;
+}
 
 /* total width */
 main::-webkit-scrollbar {
