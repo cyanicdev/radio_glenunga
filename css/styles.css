@@ -64,7 +64,7 @@ main {
     position: absolute;
     width: 100%;
     top: 75px;
-    height: calc(100% - 60px - 105px);
+    height: calc(100% - 75px);
 }
 
 @font-face {
@@ -199,7 +199,7 @@ main::-webkit-scrollbar-button {display:none}
 }
 
 .popup-overlay {
-    z-index: 1000;
+    z-index: 900;
     background-color: black;
     opacity: 0.9;
     position: absolute;
@@ -208,7 +208,6 @@ main::-webkit-scrollbar-button {display:none}
     width: 100%;
     height: 100%;
     display: block;
-    visibility: hidden;
 }
 
 .popup-cross {
@@ -216,9 +215,23 @@ main::-webkit-scrollbar-button {display:none}
     position: absolute;
     top: 3%;
     left: 2%;
-    visibility: hidden;
     cursor: pointer;
 }
+
+.popup-message {
+    z-index: 999;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    width: 400px;
+    height: 300px;
+    margin-top: -150px;
+    margin-left: -200px;
+    text-align: center;
+    text-shadow: 0 0 5px black;
+}
+
+.popup { visibility: hidden; }
 
 header a {
     -webkit-touch-callout: none;

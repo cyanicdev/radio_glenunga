@@ -1,8 +1,9 @@
 
 let now_playing = null;
 
-$(document).ready(function(){
+//now_playing.replace(/\stream/g, '').replace(/\-/g, ' ')
 
+$(document).ready(function(){
     $(".overlay").click(function(){
         if (now_playing != $(this).parent('.stream').attr('class')) {
             // play song
@@ -30,6 +31,11 @@ $(document).ready(function(){
             now_playing = null;
         }
     });
+
+    $('.popup').bind('click', function() {
+        $('.popup').css('visibility', 'hidden');
+        $('.popup-content').css('visibility', 'hidden');
+    });
 });
 
 
@@ -43,7 +49,4 @@ $.ajax({
     }
 });
 
-$('.popup').bind('click', function() {
-    $('.popup').css('visibility', 'hidden');
-    $('.popup-content').css('visibility', 'hidden');
-});
+
