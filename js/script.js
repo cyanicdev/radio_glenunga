@@ -41,7 +41,7 @@ $(document).ready(function(){
 
 $.ajax({ 
     type: 'GET', 
-    url: 'http://10.60.101.11:8000/status-json.xsl', 
+    url: window.location.protocol + '//' + window.location.hostname + ':8000/status-json.xsl', 
     data: { get_param: 'icestats' }, 
     dataType: 'json',
     success: function (data) { 
@@ -49,4 +49,21 @@ $.ajax({
     }
 });
 
+let elements = document.getElementsByClassName("local-port");
 
+for(let i = 0, element; element = elements[i++];) {
+  if (element.tagName.toLowerCase() == 'audio')
+  {
+    let port = element.getAttribute('src').match(/^:(\d+)(.*)/);
+    if (port)
+    {
+       element.src = window.location.protocol + "//" + window.location.hostname + ":" + port[1] + "/" + element.getAttribute('src').split('/')[1];
+    }
+  } else if (element.tagName.toLowerCase() == 'a') {
+    let port = element.getAttribute('href').match(/^:(\d+)(.*)/);
+    if (port)
+    {
+       element.href = window.location.protocol + "//" + window.location.hostname + ":" + port[1] + "/" + element.getAttribute('src').split('/')[1];
+    }
+  }
+}
