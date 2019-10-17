@@ -3,6 +3,8 @@ let now_playing = null;
 
 //now_playing.replace(/\stream/g, '').replace(/\-/g, ' ')
 
+var originalSrc;
+
 $(document).ready(function(){
     $(".overlay").click(function(){
         if (now_playing != $(this).parent('.stream').attr('class')) {
@@ -22,7 +24,13 @@ $(document).ready(function(){
             }); 
 
             // bad code fix this
-            document.getElementsByClassName(now_playing)[0].children[1].children[0].play();
+            let player = document.getElementsByClassName(now_playing)[0].children[1].children[0];
+	    originalSrc = player.getAttribute("src")
+	    player.setAttribute("src","")
+	    player.load()
+	    player.setAttribute("src",originalSrc)
+	    player.load()
+	    player.play()
         } else {
             // pause song
             $(this).children('i').toggleClass('fa-play-circle fa-pause-circle');
