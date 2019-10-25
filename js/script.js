@@ -25,10 +25,6 @@ $(document).ready(function(){
 
             // bad code fix this
             let player = document.getElementsByClassName(now_playing)[0].children[1].children[0];
-	    originalSrc = player.getAttribute("src")
-	    player.setAttribute("src","")
-	    player.load()
-	    player.setAttribute("src",originalSrc)
 	    player.load()
 	    player.play()
         } else {
