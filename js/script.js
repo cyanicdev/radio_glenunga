@@ -42,6 +42,24 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready ( function(){
+    resize();
+ });
+
+$(window).resize(function() {
+    resize();
+});
+
+function resize(){
+    if ($(window).width() < 960) {
+        document.getElementById("titleImage").removeAttribute("hidden");
+        document.getElementById("titleText").setAttribute("hidden","1");
+     }
+    else {
+     document.getElementById("titleText").removeAttribute("hidden");
+     document.getElementById("titleImage").setAttribute("hidden","1");
+    }
+}
 
 $.ajax({ 
     type: 'GET', 
@@ -70,23 +88,4 @@ for(let i = 0, element; element = elements[i++];) {
        element.href = window.location.protocol + "//" + window.location.hostname + ":" + port[1] + "/" + element.getAttribute('src').split('/')[1];
     }
   }
-}
-
-$(document).ready ( function(){
-    resize();
- });
-
-$(window).resize(function() {
-    resize();
-});
-
-function resize(){
-    if ($(window).width() < 960) {
-        document.getElementById("titleImage").removeAttribute("hidden");
-        document.getElementById("titleText").setAttribute("hidden","1");
-     }
-    else {
-     document.getElementById("titleText").removeAttribute("hidden");
-     document.getElementById("titleImage").setAttribute("hidden","1");
-    }
 }
