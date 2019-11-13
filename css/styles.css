@@ -69,12 +69,12 @@ main {
 
 @font-face {
     font-family: "gilroy-bold";
-    src: url("https://cyanicdev.github.io/radio_glenunga/res/fonts/Gilroy-ExtraBold.otf");
+    src: url("../res/fonts/Gilroy-ExtraBold.otf");
 }
 
 @font-face {
     font-family: "gilroy-light";
-    src: url("https://cyanicdev.github.io/radio_glenunga/res/fonts/Gilroy-Light.otf");
+    src: url("../res/fonts/Gilroy-Light.otf");
 }
 
 h1, h2, h3, h4, h5 {
