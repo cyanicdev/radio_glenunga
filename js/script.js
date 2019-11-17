@@ -79,6 +79,9 @@ function resize(){
         document.getElementById("infoText").removeAttribute("hidden");
         document.getElementById("infoImage").setAttribute("hidden","1");
 
+        document.getElementById("musicText").removeAttribute("hidden");
+        document.getElementById("musicImage").setAttribute("hidden","1");
+
         document.getElementById("feedbackText").removeAttribute("hidden");
         document.getElementById("feedbackImage").setAttribute("hidden","1");
     }
