@@ -8,54 +8,58 @@
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </head>
     <body>
-        <h1>About</h1>
-        <h5>An extra special thanks to all those people who put so many hours into making this idea a reality, and for our listeners who give us the motivation to do something awesome.</h5>
-        
-        <table>
-          <!--Table body-->
-            <tbody>
-                <tr>
-                    <td>
-                        <h3>Developers</h3>
-                    </td>
-                    <td>
-                        <h6> &emsp; &emsp; Archer Gardiner-Sheridan <br> &emsp; &emsp; Mitchell Kempen <br> &emsp; &emsp; Javad Hamidi</h6>
-                    </td>
-                    <td>
-                        <h3>Show Hosts</h3>
-                    </td>
-                    <td>
-                        <h6>
-                                &emsp; &emsp; Glenunga Weekly (coming soon) <br>
-                                &emsp; &emsp; &emsp; Antonio Bibbo <br>
-                                &emsp; &emsp; &emsp; Dhruv Joshi <br>
-                                &emsp; &emsp; &emsp; Produced by Javad Hamidi <br>
-                                <br>
-                                &emsp; &emsp; TIL (coming soon) <br>
-                                &emsp; &emsp; &emsp; Archer Gardiner-Sheridan <br>
-                                &emsp; &emsp; &emsp; Javad Hamidi <br>
-                                &emsp; &emsp; &emsp; Produced by Mitchell Kempen <br>
-                        </h6>
-                    </td>
-                    <td>
-                        <h3>Station Content Curators</h3>
-                    </td>
-                    <td>
-                        <h6>
-                                &emsp; &emsp; Glenunga Main &emsp; &emsp; With suggestions from the entire Glenunga community <br>
-                                &emsp; &emsp; Lofi &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Javad Hamidi <br>
-                                &emsp; &emsp; House/EDM &emsp; &emsp; &emsp; Archer Gardiner-Sheridan <br>
-                                &emsp; &emsp; Pop Rock &emsp; &emsp; &emsp; &emsp; Leo Bodycomb <br>
-                        </h6>
-                    </td>
-                    <td>
-                        <h6>Special thanks to the incredible support from Jason Spalding who keeps this site alive and Rob Thomas who has given us the facilities to make this possible.</h6>
-                    </td>
-                </tr>
-            </tbody>
-          <!--Table body-->
-        </table>
-        <!--Table-->
+        <div id="page">
+            <div id="content">
+                <h1>About</h1>
+                <h5>An extra special thanks to all those people who put so many hours into making this idea a reality, and for our listeners who give us the motivation to do something awesome.</h5>
+                
+                <table>
+                  <!--Table body-->
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h3>Developers</h3>
+                            </td>
+                            <td>
+                                <h6> &emsp; &emsp; Archer Gardiner-Sheridan <br> &emsp; &emsp; Mitchell Kempen <br> &emsp; &emsp; Javad Hamidi</h6>
+                            </td>
+                            <td>
+                                <h3>Show Hosts</h3>
+                            </td>
+                            <td>
+                                <h6>
+                                        &emsp; &emsp; Glenunga Weekly (coming soon) <br>
+                                        &emsp; &emsp; &emsp; Antonio Bibbo <br>
+                                        &emsp; &emsp; &emsp; Dhruv Joshi <br>
+                                        &emsp; &emsp; &emsp; Produced by Javad Hamidi <br>
+                                        <br>
+                                        &emsp; &emsp; TIL (coming soon) <br>
+                                        &emsp; &emsp; &emsp; Archer Gardiner-Sheridan <br>
+                                        &emsp; &emsp; &emsp; Javad Hamidi <br>
+                                        &emsp; &emsp; &emsp; Produced by Mitchell Kempen <br>
+                                </h6>
+                            </td>
+                            <td>
+                                <h3>Station Content Curators</h3>
+                            </td>
+                            <td>
+                                <h6>
+                                        &emsp; &emsp; Glenunga Main &emsp; &emsp; With suggestions from the entire Glenunga community <br>
+                                        &emsp; &emsp; Lofi &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Javad Hamidi <br>
+                                        &emsp; &emsp; House/EDM &emsp; &emsp; &emsp; Archer Gardiner-Sheridan <br>
+                                        &emsp; &emsp; Pop Rock &emsp; &emsp; &emsp; &emsp; Leo Bodycomb <br>
+                                </h6>
+                            </td>
+                            <td>
+                                <h6>Special thanks to the incredible support from Jason Spalding who keeps this site alive and Rob Thomas who has given us the facilities to make this possible.</h6>
+                            </td>
+                        </tr>
+                    </tbody>
+                  <!--Table body-->
+                </table>
+                <!--Table-->
+            </div>
+        </div>
     </body>
     <style>
         body{
@@ -82,6 +86,7 @@
         }
 
         h6{
+            font-size: 16px;
             color: white;
             font-family: "gilroy-light";
         }
@@ -98,6 +103,20 @@
 
         th, td{
             display: block;
+        }
+
+        #page{
+            display: table;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        #content{
+            display: table-cell;
+            vertical-align: middle;
         }
 
         @font-face {
