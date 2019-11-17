@@ -52,12 +52,35 @@ $(window).resize(function() {
 
 function resize(){
     if ($(window).width() < 960) {
+        // change title to image
         document.getElementById("titleImage").removeAttribute("hidden");
         document.getElementById("titleText").setAttribute("hidden","1");
+
+        document.getElementById("discordImage").removeAttribute("hidden");
+        document.getElementById("discordText").setAttribute("hidden","1");
+
+        document.getElementById("infoImage").removeAttribute("hidden");
+        document.getElementById("infoText").setAttribute("hidden","1");
+        
+        document.getElementById("musicImage").removeAttribute("hidden");
+        document.getElementById("musicText").setAttribute("hidden","1");
+
+        document.getElementById("feedbackImage").removeAttribute("hidden");
+        document.getElementById("feedbackText").setAttribute("hidden","1");
      }
     else {
-     document.getElementById("titleText").removeAttribute("hidden");
-     document.getElementById("titleImage").setAttribute("hidden","1");
+        // change image to title
+        document.getElementById("titleText").removeAttribute("hidden");
+        document.getElementById("titleImage").setAttribute("hidden","1");
+
+        document.getElementById("discordText").removeAttribute("hidden");
+        document.getElementById("discordImage").setAttribute("hidden","1");
+
+        document.getElementById("infoText").removeAttribute("hidden");
+        document.getElementById("infoImage").setAttribute("hidden","1");
+
+        document.getElementById("feedbackText").removeAttribute("hidden");
+        document.getElementById("feedbackImage").setAttribute("hidden","1");
     }
 }
 
