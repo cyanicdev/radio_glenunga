@@ -108,6 +108,7 @@ $.ajax({
     }
 });
 
+/*
 $.ajax({ 
     type: 'GET', 
     url: "http://portal.gihs.sa.edu.au:8000/status-json.xsl", 
@@ -117,6 +118,7 @@ $.ajax({
         console.log(data);
     }
 });
+*/
 
 let elements = document.getElementsByClassName("local-port");
 
