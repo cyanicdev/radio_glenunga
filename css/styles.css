@@ -260,3 +260,8 @@ header a {
     user-select: none;
     cursor: pointer;
 }
+
+#credsText{
+    text-align: center;
+    margin: 0px;
+}

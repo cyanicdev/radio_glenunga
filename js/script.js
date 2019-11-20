@@ -89,7 +89,28 @@ function resize(){
 
 $.ajax({ 
     type: 'GET', 
-    url: window.location.protocol + '//' + window.location.hostname + ':8000/status-json.xsl', 
+    url: window.location.protocol + "//" + window.location.hostname + "/radio/pw",
+    dataType: 'json',
+    success: function (data) { 
+        console.log(data)
+        if (data.status === "ok"){
+            document.getElementById("credsText").textContent = "Username: radio_gihs Password: " + data.password;
+        } else {
+            document.getElementById("credsText").textContent = "Sign in to Daily Access to see the username and password for Radio Glenunga";
+            document.getElementById("stations").style.opacity = 0.3;
+            document.getElementById("stations").style.cursor = "default";
+        }
+    },
+    error: function (error){
+        document.getElementById("credsText").textContent = "Sign in to Daily Access to see the username and password for Radio Glenunga";
+        document.getElementById("stations").style.opacity = 0.3;
+        document.getElementById("stations").style.cursor = "default";
+    }
+});
+
+$.ajax({ 
+    type: 'GET', 
+    url: "http://portal.gihs.sa.edu.au:8000/status-json.xsl", 
     data: { get_param: 'icestats' }, 
     dataType: 'json',
     success: function (data) { 
