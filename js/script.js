@@ -1,4 +1,4 @@
-
+let logged_in = false;
 let now_playing = null;
 
 //now_playing.replace(/\stream/g, '').replace(/\-/g, ' ')
@@ -7,32 +7,33 @@ var originalSrc;
 
 $(document).ready(function(){
     $(".overlay").click(function(){
-        if (now_playing != $(this).parent('.stream').attr('class')) {
-            // play song
-            now_playing = $(this).parent('.stream').attr('class');
-
-            $('i').each(function(){
-                if ($(this).attr('class') == 'far fa-pause-circle') {
-                    $(this).attr('class', 'far fa-play-circle');
-                }
-            }); 
-
-            $(this).children('i').toggleClass('fa-play-circle fa-pause-circle');
-
-            $('audio').each(function(){
-                this.pause(); // Stop playing
-            }); 
-
-            // bad code fix this
-            let player = document.getElementsByClassName(now_playing)[0].children[1].children[0];
-	    player.load()
-	    player.play()
-        } else {
-            // pause song
-            $(this).children('i').toggleClass('fa-play-circle fa-pause-circle');
-
-            document.getElementsByClassName(now_playing)[0].children[1].children[0].pause();
-            now_playing = null;
+        if(logged_in) {
+            if (now_playing != $(this).parent('.stream').attr('class')) {
+                // play song
+                now_playing = $(this).parent('.stream').attr('class');
+    
+                $('i').each(function(){
+                    if ($(this).attr('class') == 'far fa-pause-circle') {
+                        $(this).attr('class', 'far fa-play-circle');
+                    }
+                }); 
+    
+                $(this).children('i').toggleClass('fa-play-circle fa-pause-circle');
+    
+                $('audio').each(function(){
+                    this.pause();
+                }); 
+    
+                let player = document.getElementsByClassName(now_playing)[0].children[1].children[0];
+                player.load()
+                player.play()
+            } else {
+                // pause song
+                $(this).children('i').toggleClass('fa-play-circle fa-pause-circle');
+    
+                document.getElementsByClassName(now_playing)[0].children[1].children[0].pause();
+                now_playing = null;
+            }
         }
     });
 
@@ -94,17 +95,21 @@ $.ajax({
     success: function (data) { 
         console.log(data)
         if (data.status === "ok"){
-            document.getElementById("credsText").textContent = "Username: radio_gihs Password: " + data.password;
+            document.getElementById("credsText").textContent = "Username: radio_gihs     Password: " + data.password;
+            $(".overlay").each(function(){
+                $('i').each(function(){
+                    $(this).attr('class', 'far fa-play-circle');
+                }); 
+            });
+            logged_in = true;
         } else {
-            document.getElementById("credsText").textContent = "Sign in to Daily Access to see the username and password for Radio Glenunga";
-            document.getElementById("stations").style.opacity = 0.3;
-            document.getElementById("stations").style.cursor = "default";
+            document.getElementById("credsText").textContent = "Sign in to Daily Access to access Radio Glenunga";
+            document.getElementById("stations").style.opacity = 0.5;
         }
     },
     error: function (error){
-        document.getElementById("credsText").textContent = "Sign in to Daily Access to see the username and password for Radio Glenunga";
-        document.getElementById("stations").style.opacity = 0.3;
-        document.getElementById("stations").style.cursor = "default";
+        document.getElementById("credsText").textContent = "Sign in to Daily Access to access Radio Glenunga";
+        document.getElementById("stations").style.opacity = 0.5;
     }
 });
 

@@ -5,20 +5,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Radio Glenunga - Home</title>
+    <script src="js/jquery.min.js"></script> 
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <!--<link rel="stylesheet" href="css/Features-Boxed.css">-->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/radioplayer.css">
     <link rel="icon" href="res/favicon.ico" type="image/x-icon"/>
     <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
-    <script src="js/jquery.min.js"></script>
 </head>
 
 <body>
     <header>
         <div class="text-center">
             <img src="res/img/logo-transparent.svg" width="80px" height="45px" hidden id="titleImage">
-	        <h1 height="45px" id="titleText">Radio Glenunga</h1>
+	        <h1 height="45px" id="titleText" style="margin-top: -2px;">Radio Glenunga</h1>
         </div>
         <div class="nav-left">
             <a onclick="(function(){window.open('https:\/\/docs.google.com/forms/d/e/1FAIpQLSeWBD_EAUswC9YCMuirgFB7q4Rvb_AZOWwv1KK9esqkw5nD9w/viewform?','_blank');})()" id="feedbackText">Feedback</a>
@@ -39,8 +39,8 @@
             <div class="pop-stream stream">   
                 <img src="res/img/pop_cover.png">
                 <div class="overlay">
-                    <audio src="http://portal.gihs.sa.edu.au:8000/pop.ogg"></audio>
-                    <i class="far fa-play-circle"></i>
+                    <audio preload="none" src="http://portal.gihs.sa.edu.au:8000/pop.ogg"></audio>
+                    <i class="far fa-times-circle"></i>
                 </div> 
             </div>  
             <h5 class="stream-header">Pop / Talk Show</h5> 
@@ -50,8 +50,8 @@
             <div class="lofi-stream stream">   
                 <img src="res/img/lofi_cover.png">
                 <div class="overlay">
-                    <audio src="http://portal.gihs.sa.edu.au:8000/lofi.ogg"></audio>
-                    <i class="far fa-play-circle"></i>
+                    <audio preload="none" src="http://portal.gihs.sa.edu.au:8000/lofi.ogg"></audio>
+                    <i class="far fa-times-circle"></i>
                 </div> 
             </div>  
             <h5 class="stream-header">LoFi - Study Music</h5> 
@@ -61,8 +61,8 @@
             <div class="house-stream stream">   
                 <img src="res/img/house_cover.png">
                 <div class="overlay">
-                    <audio src="http://portal.gihs.sa.edu.au:8000/house.ogg"></audio>
-                    <i class="far fa-play-circle"></i>
+                    <audio preload="none" src="http://portal.gihs.sa.edu.au:8000/house.ogg"></audio>
+                    <i class="far fa-times-circle"></i>
                 </div>
             </div>
             <h5 class="stream-header">House and Dance</h5> 
@@ -72,8 +72,8 @@
             <div class="pop-rock-stream stream">   
                 <img src="res/img/pop_rock_cover.png">
                 <div class="overlay">
-                    <audio src="http://portal.gihs.sa.edu.au:8000/rock.ogg"></audio>
-                    <i class="far fa-play-circle"></i>
+                    <audio preload="none" src="http://portal.gihs.sa.edu.au:8000/rock.ogg"></audio>
+                    <i class="far fa-times-circle"></i>
                 </div>
             </div>
             <h5 class="stream-header">Classic Hits</h5> 

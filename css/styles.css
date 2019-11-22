@@ -1,6 +1,6 @@
 body { 
     color: white;
-    background-color: #141414;
+    background-color: #1e1e1e;
     font-family: "gilroy-light";
 }
 
@@ -12,8 +12,8 @@ a {
 }
 
 a:hover {
-    background-color: #252525;
-    box-shadow: 0px 2px 5px #101010;
+    background-color: #333;
+    box-shadow: 0px 2px 5px #222;
     transition-duration: 100ms;
 }
 
@@ -26,13 +26,6 @@ i {
     /*font-family: "gilroy-bold";*/
 }
 
-i:hover {
-    background-color: #252525;
-    box-shadow: 0px 2px 5px #101010;
-    transition-duration: 100ms;
-    cursor: pointer;
-}
-
 .col {
     padding: 50px;
     margin-top: 15px;
@@ -40,7 +33,7 @@ i:hover {
     width: 300px;
     display: inline-block;
     vertical-align: top;
-    /*background-color: #1f1f1f;*/
+    /*background-color: #252526;*/
     border-radius: 5px;
 }
 
@@ -49,8 +42,8 @@ header {
     width: 100%;
     padding: 15px;
     overflow: hidden;
-    background-color: #1f1f1f;
-    box-shadow: 0px -2px 10px #070707;
+    background-color: #252526;
+    box-shadow: 0px 0px 10px #111;
 }
 
 footer {
@@ -58,8 +51,8 @@ footer {
     overflow: hidden;
     position: absolute;
     bottom: 0;
-    background-color: #1f1f1f;
-    box-shadow: 0px 2px 10px #070707;
+    background-color: #252526;
+    box-shadow: 0px 0px 10px #111;
     width: 100%;
 }
 
@@ -80,7 +73,7 @@ main {
     position: absolute;
     width: 100%;
     top: 75px;
-    height: calc(100% - 75px);
+    height: calc(100% - 130px);
 }
 
 @font-face {
@@ -91,10 +84,6 @@ main {
 @font-face {
     font-family: "gilroy-light";
     src: url("../res/fonts/Gilroy-Light.otf");
-}
-
-h1, h2, h3, h4, h5 {
-    font-family: "gilroy-bold";
 }
 
 h2 {
@@ -127,12 +116,14 @@ h3 {
 .stream img {
     width: 200px;
     height: 200px;
-    box-shadow: 0px 0px 10px #070707;
+    box-shadow: 0px 0px 10px black;
 }
 
 
 .overlay:hover {
+    transition-duration: 50ms;
     opacity: 0.7;
+    cursor: pointer;
 }
 
 .far {
