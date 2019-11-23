@@ -97,9 +97,7 @@ $.ajax({
         if (data.status === "ok"){
             document.getElementById("credsText").textContent = "Username: radio_gihs     Password: " + data.password;
             $(".overlay").each(function(){
-                $('i').each(function(){
-                    $(this).attr('class', 'far fa-play-circle');
-                }); 
+                $(this).children('i').toggleClass('fa-times-circle fa-play-circle');
             });
             logged_in = true;
         } else {
