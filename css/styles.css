@@ -86,6 +86,10 @@ main {
     src: url("../res/fonts/Gilroy-Light.otf");
 }
 
+h1 {
+    font-family: "gilroy-bold";
+}
+
 h2 {
     font-size: 40px;
 }
