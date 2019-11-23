@@ -176,7 +176,7 @@ h3 {
 /* Customize website's scrollbar like Mac OS */
 
 main {
-    scrollbar-color: #555 #141414;
+    scrollbar-color: #555 #1e1e1e;
 }
 
 /* total width */
@@ -195,7 +195,7 @@ main::-webkit-scrollbar-thumb {
 
 /* remove white box */
 main::-webkit-scrollbar-corner {
-  background: #141414;
+  background: #1e1e1e;
 }
 
 /* set button(top and bottom of the scrollbar) */
