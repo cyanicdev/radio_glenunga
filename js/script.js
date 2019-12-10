@@ -100,6 +100,10 @@ $.ajax({
                 $(this).children('i').toggleClass('fa-times-circle fa-play-circle');
             });
             logged_in = true;
+            if ($('#radioplayer').length) {
+                $('#radioplayer').show()
+                $('#creds').hide()
+            }
         } else {
             document.getElementById("credsText").textContent = "Sign in to Daily Access to access Radio Glenunga";
             document.getElementById("stations").style.opacity = 0.5;
